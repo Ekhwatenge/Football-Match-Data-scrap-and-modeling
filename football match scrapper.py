@@ -35,7 +35,7 @@ def scrape_man_utd_fixtures():
             'match_time': match_time
         })
     
-    # Filter for Manchester United matches only
+    # Manchester United matches only
     mu_matches = [m for m in matches if 'Manchester United' in (m['home_team'], m['away_team'])]
     
     df = pd.DataFrame(mu_matches)
